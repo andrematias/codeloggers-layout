@@ -15,6 +15,7 @@
     "gulp-html": "^3.2.0",
     "gulp-sass": "^4.1.0",
     "gulp-uglify": "^3.0.2",
-    "gulp-useref": "^4.0.1"
+    "gulp-useref": "^4.0.1",
+    "js-yaml": "^3.13.1"
   }
 }
