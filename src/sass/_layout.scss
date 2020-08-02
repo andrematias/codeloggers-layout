@@ -1,0 +1,405 @@
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: {
+    left: 5%;
+    right: 5%;
+  }
+}
+
+.d-inline {
+  display: inline;
+}
+
+.line-separator {
+  display: block;
+  background-color: $clean-gray;
+  margin: {
+    top: 5%;
+    bottom: 5%;
+  }
+  width: 100%;
+  height: 1px;
+}
+
+.w-25 {
+  width: 25% !important;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.text-light {
+  color: $light-gray;
+}
+
+.text-dark {
+  color: $black;
+}
+
+.text-right{
+  text-align: right;
+}
+
+.github-ico {
+  @extend %fa-icon;
+  @extend .fab;
+
+  &:before {
+    content: fa-content($fa-var-github-alt);
+  }
+}
+
+.dev-ico {
+  @extend %fa-icon;
+  @extend .fab;
+
+  &:before {
+    content: fa-content($fa-var-dev);
+  }
+}
+
+.linkedin-ico {
+  @extend %fa-icon;
+  @extend .fab;
+
+  &:before {
+    content: fa-content($fa-var-linkedin);
+  }
+}
+
+.gitlab-ico {
+  @extend %fa-icon;
+  @extend .fab;
+
+  &:before {
+    content: fa-content($fa-var-gitlab);
+  }
+}
+
+.about-ico {
+  @extend %fa-icon;
+  @extend .fa;
+
+  &:before {
+    content: fa-content($fa-var-user);
+  }
+}
+
+.home-ico {
+  @extend %fa-icon;
+  @extend .fa;
+
+  &:before {
+    content: fa-content($fa-var-home);
+  }
+}
+
+.blog-ico {
+  @extend %fa-icon;
+  @extend .fa;
+
+  &:before {
+    // content: fa-content($fa-var-pencil-alt);
+    content: fa-content($fa-var-pencil-alt);
+  }
+}
+
+.tag-ico {
+  @extend %fa-icon;
+  @extend .fa;
+
+  &:before {
+    // content: fa-content($fa-var-pencil-alt);
+    content: fa-content($fa-var-tag);
+  }
+}
+
+.calendar-ico {
+  @extend %fa-icon;
+  @extend .fa;
+
+  &:before {
+    // content: fa-content($fa-var-pencil-alt);
+    content: fa-content($fa-var-calendar);
+  }
+}
+
+.contact-ico {
+  @extend %fa-icon;
+  @extend .fa;
+
+  &:before {
+    content: fa-content($fa-var-comment);
+  }
+}
+
+.mail-ico {
+  @extend %fa-icon;
+  @extend .fa;
+
+  &:before {
+    content: fa-content($fa-var-at);
+  }
+}
+
+.search-ico {
+  @extend %fa-icon;
+  @extend .fa;
+
+  &:before {
+    content: fa-content($fa-var-search);
+  }
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  border-radius: 0;
+  padding: {
+    left: 1em;
+    right: 1em;
+  };
+}
+
+.btn.btn-black {
+  background-color: $black;
+  color: $white;
+}
+
+.post-metadata,
+#menu-header,
+#mobile-menu,
+#social-media {
+  ul {
+    @include horizontal-list();
+    a {
+      text-decoration: none;
+
+      &:hover {
+        color: $black;
+      }
+    }
+  }
+}
+
+#app-header {
+  @include flexbox();
+  justify-content: space-between;
+  color: $black;
+  margin-top: 10%;
+
+  #brand-navigator {
+    @include flexbox();
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #brand {
+    white-space: nowrap;
+  }
+
+  #author {
+    @include grid();
+    justify-content: end;
+    #photo {
+      @include grid();
+      justify-content: center;
+      img {
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        object-fit: cover;
+      }
+    }
+
+    #social-media {
+      @include grid();
+      justify-content: center;
+      margin: {
+        top: 5%;
+      };
+    }
+  }
+
+
+  @media (max-width: $ipad-vertical-resolution) {
+    flex-direction: column;
+    align-items: center;
+    flex-flow: column-reverse;
+    
+    #brand {
+      font-size: 0.8rem;
+      margin: {
+        top: 5%;
+      }
+    }
+
+    #menu-header {
+      display: none;
+    }
+    
+  }
+}
+
+#app-content {
+  margin: {
+    top: 10%;
+  }
+  #posts-grid {
+    @include grid();
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 50px 30px;
+
+    .post-preview {
+      .thumbnail{
+        img{
+          border-radius: 5px;
+          height: 150px;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+#app-footer{
+  margin: {
+    top: 10%;
+  }
+  @media (max-width: $ipad-vertical-resolution) {
+    margin: {
+      bottom: 30%;
+    };
+  }
+}
+
+#search {
+  .input-group {
+    @include flexbox();
+    justify-content: space-between;
+    width: 100%;
+    input, input[type="text"] {
+      width: 100%;
+      border: {
+        top: 1px solid $clean-gray;
+        bottom: 1px solid $clean-gray;
+        left: 1px solid $clean-gray;
+        right: none;
+      }
+    }
+  }
+}
+
+#mobile-menu{
+  width: 100%;
+  min-height: 50px;
+  display: none;
+  position: fixed;
+  bottom: 0;
+  font-size: 1em;
+  border-top: 1px solid $dark-gray;
+  background-color: $white;
+
+  ul {
+    width: 100%;
+    @include flexbox();
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  @media (max-width: $ipad-vertical-resolution) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.article-post-metadata {
+  @include grid();
+  grid-template-columns: 1fr;
+  
+  aside > img {
+    width: 40px;
+    border-radius: 100%;
+  }
+  
+  ul {
+    @include horizontal-list();
+  }
+
+}
+
+.author-mini-bio {
+  @include grid();
+  grid-template-columns: 10% 1fr;
+  grid-gap: 1rem;
+  
+  #author-image-mini-bio{
+    img {
+      width: 100%;
+      border-radius: 100%;
+    }
+
+  }
+  #author-mini-bio-metadata{
+    @include flexbox();
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.post-image{
+  text-align: center;
+  margin: {
+    top: 2%;
+    bottom: 2%;
+  }
+  
+  img {
+    box-shadow: 5px 5px 2px $clean-gray; 
+    width: 80%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+}
+
+#about-content {
+
+  #about-me{
+    @include grid();
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-gap: 1rem;
+    img {
+      width: 100%;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    span {
+      grid-column: span 2;
+    }
+
+    @media (max-width: $ipad-vertical-resolution) {
+      span {
+        grid-column: span 1;
+      }
+    }
+  }
+
+}
+
+#contact-content {
+  #contact-social-medias {
+    #social-medias {
+      @include grid();
+      grid-template-columns: repeat(auto-fill, 200px);
+    }
+  }
+
+  #form-contact{
+    input[type="text"], textarea {
+      width: 100%;
+    }
+  }
+}

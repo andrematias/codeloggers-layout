@@ -39,13 +39,13 @@
           <nav id="social-media">
             <ul>
               <li>
-                <a href="https://github.com/andrematias" target="_blank"><i class="github-ico text-dark"></i></a>
+                <a href="#"><i class="github-ico text-dark"></i></a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/in/devandrematias/" target="_blank"><i class="linkedin-ico text-dark"></i></a>
+                <a href="#"><i class="linkedin-ico text-dark"></i></a>
               </li>
               <li>
-                <a href="https://dev.to/andrematias" target="_blank"><i class="dev-ico text-dark"></i></a>
+                <a href="#"><i class="gitlab-ico text-dark"></i></a>
               </li>
             </ul>
           </nav>
@@ -53,37 +53,45 @@
       </header>
 
       <main id="app-content">
-        <section id="about-content">
-          <article id="introducing-me">
+        <header id="search">
+          <form action="">
+            <div class="input-group">
+              <input type="text" name="search" placeholder="Search an article">
+              <button class="btn btn-black"><i class="search-ico"></i></button>
+            </div>
+          </form>
+        </header>
+        <h1>Here are what I've thinking about</h1>
+        <section id="posts-grid">
+          <article class="post-preview">
             <header>
-              <h1>Introducing me</h1>
+              <a href="/post.html">
+                <figure class="thumbnail">
+                  <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1" alt="Thumbnail" />
+                </figure>
+                <h3 class="article-title text-dark">
+                  Undertanding the WinRM service
+                </h3>
+                <span class="line-separator w-25 m-auto"></span>
+              </a>
             </header>
-            <section id="about-me">
-              <figure>
-                <img
-                src="./images/about-me.jpg"
-                  alt=""
-                  srcset=""
-                />
-              </figure>
-              <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis amet nobis, ullam provident deserunt ipsam pariatur aliquam modi architecto velit possimus cumque, esse error suscipit fuga mollitia. Delectus, libero blanditiis!</span>
+            <section>
+              <span>André Matias</span>
             </section>
-            
+            <section class="post-metadata">
+              <ul>
+                <li><small><i class="tag-ico"></i> Protocols</small></li>
+                <li><small><i class="calendar-ico"></i> July 10, 2020</small></li>
+              </ul>
+            </section>
+            <main class="post-except">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ipsam qui iure, blanditiis in corporis magni, dolor atque earum ipsa quasi et modi voluptates soluta quidem, amet autem nobis quis.</p>
+            </main>
+            <footer>
+              <strong><a class="text-dark" href="#" target="_blank" rel="noopener noreferrer">Continue reading</a></strong>
+            </footer>
           </article>
 
-          <article id="why-this-blog">
-            <header>
-              <h1>Why did I create this blog?</h1>
-            </header>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis amet nobis, ullam provident deserunt ipsam pariatur aliquam modi architecto velit possimus cumque, esse error suscipit fuga mollitia. Delectus, libero blanditiis!</p>            
-          </article>
-
-          <article id="for-who">
-            <header>
-              <h1>For who is this blog?</h1>
-            </header>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis amet nobis, ullam provident deserunt ipsam pariatur aliquam modi architecto velit possimus cumque, esse error suscipit fuga mollitia. Delectus, libero blanditiis!</p>            
-          </article>
         </section>
       </main>
 

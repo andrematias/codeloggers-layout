@@ -53,37 +53,70 @@
       </header>
 
       <main id="app-content">
-        <section id="about-content">
-          <article id="introducing-me">
+        <section id="contact-content">
+          <article id="form-contact">
             <header>
-              <h1>Introducing me</h1>
+              <h1>Tell me what's going on</h1>
             </header>
-            <section id="about-me">
-              <figure>
-                <img
-                src="./images/about-me.jpg"
-                  alt=""
-                  srcset=""
-                />
-              </figure>
-              <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis amet nobis, ullam provident deserunt ipsam pariatur aliquam modi architecto velit possimus cumque, esse error suscipit fuga mollitia. Delectus, libero blanditiis!</span>
+            <form action="" method="POST">
+            <main>
+              <section>
+                <label for="subject">Subject:</label><br>
+                <input type="text" id="subject" name="subject" />
+              </section>
+              <section>
+                <label for="message">Message:</label><br>
+                <textarea name="message" id="message" rows="15"></textarea>
+              </section>
+            </main>
+            <footer class="text-right">
+              <button type="submit" class="btn btn-black">Send</button>
+            </footer>
+          </form>
+          </article>
+
+          <article id="contact-social-medias">
+            <header>
+              <h2 class="text-dark">Hey, did you know? I’m on social media too</h2>
+            </header>
+            <section id="social-medias">
+              <article class="media">
+                <div id="github">
+                  <a href="https://github.com/andrematias" target="_blank" rel="noopener noreferrer">
+                    <i class="github-ico"></i> GitHub
+                  </a>
+                </div>
+                <div id="gitlab">
+                  <a href="https://gitlab.com/andrematias" target="_blank" rel="noopener noreferrer">
+                    <i class="gitlab-ico"></i> GitLab
+                  </a>
+                </div>
+              </article>
+              <article class="media">
+                <div id="github">
+                  <a href="https://www.linkedin.com/in/devandrematias/" target="_blank" rel="noopener noreferrer">
+                    <i class="linkedin-ico"></i> LinkedIn
+                  </a>
+                </div>
+                <div id="gitlab">
+                  <a href="https://dev.to/andrematias" target="_blank" rel="noopener noreferrer">
+                    <i class="dev-ico"></i> Dev
+                  </a>
+                </div>
+              </article>
             </section>
-            
+          </article>
+          
+          <article id="contact-email">
+            <header>
+              <h2 class="text-dark">You also can send an e-mail directly</h2>
+            </header>
+            <section id="email">
+              <a href="mailto:matias@codeloggers.com">matias@codeloggers.com</a>           
+            </section>
           </article>
 
-          <article id="why-this-blog">
-            <header>
-              <h1>Why did I create this blog?</h1>
-            </header>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis amet nobis, ullam provident deserunt ipsam pariatur aliquam modi architecto velit possimus cumque, esse error suscipit fuga mollitia. Delectus, libero blanditiis!</p>            
-          </article>
-
-          <article id="for-who">
-            <header>
-              <h1>For who is this blog?</h1>
-            </header>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis amet nobis, ullam provident deserunt ipsam pariatur aliquam modi architecto velit possimus cumque, esse error suscipit fuga mollitia. Delectus, libero blanditiis!</p>            
-          </article>
+          
         </section>
       </main>
 

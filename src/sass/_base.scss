@@ -1,0 +1,117 @@
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Roboto Bold";
+  src: url("../fonts/Roboto/Roboto-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Roboto Black";
+  src: url("../fonts/Roboto/Roboto-Black.ttf");
+  font-weight: bolder;
+}
+
+@font-face {
+  font-family: "Roboto Mono Bold";
+  src: url("../fonts/Roboto/RobotoMono-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  src: url("../fonts/Roboto/RobotoMono-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "iA";
+  src: url("../fonts/iA-Fonts/iAWriterMonoS-Italic.ttf");
+  font-weight: normal;
+  font-style: italic;
+}
+
+::-moz-selection {
+  color: $white;
+  background: $black;
+}
+
+::selection {
+  color: $white;
+  background: $black;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+  font-size: 18px;
+  letter-spacing: 0.0005rem;
+  line-height: 28px;
+  color: $dark-gray;
+}
+
+i {
+  font-family: iA, monospace;
+}
+
+b,
+strong {
+  font-family: "Roboto Mono Bold", monospace;
+}
+
+h1 {
+  font-size: 2em;
+  font-family: "Roboto Black";
+  font-weight: bolder;
+  color: $black;
+  line-height: 40px;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-family: "Roboto Bold";
+  font-weight: bold;
+  color: $light-gray;
+  line-height: 40px;
+}
+
+h3 {
+  font-size: 1em;
+  font-family: "Roboto Bold";
+  font-weight: bold;
+  color: $light-gray;
+  line-height: 40px;
+}
+
+p{
+  margin-top: 1.56em;
+}
+
+a {
+  text-decoration: underline;
+  color: $light-gray;
+  font-family: "Roboto", monospace;
+}
+
+label {
+  font-family: "Roboto", monospace;
+  color: $light-gray;
+}
+
+button,
+input {
+  min-height: 34px;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}

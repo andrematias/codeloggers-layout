@@ -1,0 +1,42 @@
+@mixin flexbox {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin inline-flexbox {
+  display: -webkit-inline-flex;
+  display: -moz-inline-box;
+  display: -ms-inline-flex;
+  display: inline-flex;
+}
+
+@mixin grid {
+  display: -moz-grid;
+  display: -ms-grid;
+  display: grid;
+}
+
+@mixin reset-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin horizontal-list {
+  @include reset-list();
+  li {
+    display: inline-block;
+    margin: {
+      left: -2px;
+      right: 2em;
+    }
+  }
+  li:last-child {
+    margin: {
+      right: 0;
+    }
+  }
+}
